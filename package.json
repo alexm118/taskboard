@@ -101,5 +101,13 @@
     "react-redux": "^5.0.6",
     "react-thunk": "^1.0.0",
     "redux": "^3.7.2"
+  },
+  "proxy": {
+    "/api":  {
+      "target": "http://localhost:9000",
+      "pathRewrite": {
+        "^api/": "/"
+      }
+    }
   }
 }
